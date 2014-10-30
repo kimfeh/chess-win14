@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d41dd240-479f-4755-8de7-632ed43afa1e" name="ChessUML" linkedPackageId="0a9690bc-e96b-481d-819c-4e7e955f2d2c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="761e543b-c72c-4f84-a2f6-516111aa108c">
+      <profileInstance Id="68c7d3f6-2b3f-4e96-96e0-22278f65138e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="42d69b61-7e70-4127-9a60-7508ef843a46">
+      <profileInstance Id="fcea284e-11cd-46e7-8766-073c89786883" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cabd8e8c-afa7-4f5b-80c7-1b68bf6e685b" name="Class1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5d92014b-d33b-4ffd-832f-417667f881ce" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4528243d-ad12-48b0-a249-a2f104f375d6" name="Class2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a35da843-0833-49a9-8cd8-d9f9fc5a0c05" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2e192825-b072-40bb-9fdc-4b4c0a1ca46b" name="Class3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5c3f9942-cc5a-458d-865b-f3c767f241c0" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f53835b6-a07f-4c7d-97cb-09ca3e22b775" name="Class4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ebf4dd2e-a45e-43e4-b183-cc51720a5601" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3024877-c1cf-4011-8db3-0ced4eaf04a8" name="Class5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3a4575db-fcb8-4cc6-9a42-1b0f91140e7f" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="67c8acb6-0f6c-4878-a9ef-c04987e7cb40" name="Class6" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="61b281d6-274e-42aa-b07d-c012d07a6340" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="00ffbfac-800f-4a68-89fd-d8f2fb1003a7" name="Class7" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3fb0ba46-8b2d-4676-bd85-e8013025d605" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1fe9658b-683f-4ca7-9591-046be08f5d67" name="Class8" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c248823e-d595-4fd8-bc09-726796006125" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ec24bdc6-d1b9-4d49-a43d-162f5b91bcca" name="Class9" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="750b7e1d-0d1e-4c8e-82cc-58a7956f96db" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4ccb890a-9a7c-4651-a16f-0c64b37f64cc" name="Class10" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2315c852-8612-4abe-a12a-68556014f99e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0a9690bc-e96b-481d-819c-4e7e955f2d2c" name="Chess">
+    <elementDefinition Id="0355b758-2033-438a-963c-e26b5606cc62" />
+  </package>
+</logicalClassDesignerModel>
