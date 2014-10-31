@@ -17,7 +17,7 @@ namespace ChessProject
 
         public override void MovePiece(PieceColor color, List<ChessPiece> _blackPiecesList, List<ChessPiece> _whitePiecesList)
         {
-            if (_yPos == 7 || _yPos == 0) // stopping pawns from leaving the gameboard.
+            if (_yPos == 7 || _yPos == 0) // stopping pawns from leaving the gameboard
             {
                 return;
                 
