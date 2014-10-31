@@ -18,7 +18,7 @@ namespace ChessProject
         public string Name { get; set; }
 
 
-        public virtual void MovePiece(PieceColor color)  // An virtual MoveMethod to override in every seperated type of Piece.
+        public virtual void MovePiece(PieceColor color, List<ChessPiece> _blackPiecesList, List<ChessPiece> _whitePiecesList)  // An virtual MoveMethod to override in every seperated type of Piece.
         {
 
         }
