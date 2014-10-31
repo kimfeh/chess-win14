@@ -72,7 +72,7 @@ namespace ChessProject
                         {
                             Console.SetCursorPosition(x, y);
                             Console.Write(" ");
-                            return;
+                            
                         }
                     }
                 }
@@ -113,7 +113,7 @@ namespace ChessProject
                         {
                             Console.SetCursorPosition(x, y);
                             Console.Write(" ");
-                            return;
+                           
                         }
                     }
                 }
