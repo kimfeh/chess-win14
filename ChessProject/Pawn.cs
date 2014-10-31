@@ -24,31 +24,33 @@ namespace ChessProject
             
             else if (color == PieceColor.Black)
             {
-                if (AnalyzeWhite(_blackPiecesList, _whitePiecesList))
+                
+                if(PawnKillWhite(_blackPiecesList, _whitePiecesList))
+                {
+                    
+                }
+                else if (AnalyzeWhite(_blackPiecesList, _whitePiecesList))
                 {
                     this._yPos++;
                 }
-                else if(PawnKillBlack(_blackPiecesList, _whitePiecesList))
-                {
-                        
-                }
+                
                 
             }
             
             else if (color == PieceColor.White)
             {
-                if (AnalyzeBlack(_blackPiecesList, _whitePiecesList))
+                if (PawnKillBlack(_blackPiecesList, _whitePiecesList)) 
+                {
+                    
+                    
+                }
+                
+                else if (AnalyzeBlack(_blackPiecesList, _whitePiecesList))
                 {
                     this._yPos--;
                 }
-                else if (PawnKillWhite(_blackPiecesList, _whitePiecesList)) 
-                { 
                 
-                }
-               
-               
-                
-                
+                 
             }
         }
 
@@ -85,18 +87,18 @@ namespace ChessProject
                 
                 if (item._yPos == this._yPos - 1 && item._xPos == this._xPos + 1)
                 {
-                    
-                    item._yPos = this._yPos;
-                    item._xPos = this._xPos;
+
+                    this._yPos = item._yPos;
+                    this._xPos = item._xPos;
                     _blackPiecesList.Remove(item);
 
                     return true;
                 }
                 if (item._yPos == this._yPos - 1 && item._xPos == this._xPos - 1) 
                 {
-                   
-                    item._yPos = this._yPos;
-                    item._xPos = this._xPos;
+
+                    this._yPos = item._yPos;
+                    this._xPos = item._xPos;
                     _blackPiecesList.Remove(item);
 
                     return true;
@@ -114,18 +116,18 @@ namespace ChessProject
 
                 if (item._yPos == this._yPos - 1 && item._xPos == this._xPos + 1)
                 {
-                    
-                    item._yPos = this._yPos;
-                    item._xPos = this._xPos;
+
+                    this._yPos = item._yPos;
+                    this._xPos = item._xPos;
                     _whitePiecesList.Remove(item);
 
                     return true;
                 }
                 if (item._yPos == this._yPos - 1 && item._xPos == this._xPos - 1)
                 {
-                    
-                    item._yPos = this._yPos;
-                    item._xPos = this._xPos;
+
+                    this._yPos = item._yPos;
+                    this._xPos = item._xPos;
                     _whitePiecesList.Remove(item);
                     return true;
                 }
