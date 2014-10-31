@@ -12,14 +12,16 @@ namespace ChessProject
         {            
             this._xPos = xPos;
             this._yPos = yPos;
-            this._symbol = '@';
+            this._symbol = 'P';
         }
 
         public override void MovePiece(PieceColor color, List<ChessPiece> _blackPiecesList, List<ChessPiece> _whitePiecesList)
         {
             if (_yPos == 7 || _yPos == 0) // stopping pawns from leaving the gameboard.
             {
-                 // ska läggas in att man får välja en ny pjäs om man kommer hit med bonden.
+                return;
+                
+               // ska läggas in att man får välja en ny pjäs om man kommer hit med bonden.
             }
             
             else if (color == PieceColor.Black)
