@@ -12,7 +12,7 @@ namespace ChessProject
         {            
             this._xPos = xPos;
             this._yPos = yPos;
-            this._symbol = '█';
+            this._symbol = '@';
         }
 
         public override void MovePiece(PieceColor color, List<ChessPiece> _blackPiecesList, List<ChessPiece> _whitePiecesList)
@@ -84,25 +84,17 @@ namespace ChessProject
         {
             foreach (var item in _blackPiecesList)
             {
+
+                if ((item._yPos == this._yPos - 1 && item._xPos == this._xPos - 1) || (item._yPos == this._yPos - 1 && item._xPos == this._xPos + 1))
+                {
+
+                    this._yPos = item._yPos;
+                    this._xPos = item._xPos;
+                    _blackPiecesList.Remove(item);
+
+                    return true;
+                }
                 
-                if (item._yPos == this._yPos - 1 && item._xPos == this._xPos + 1)
-                {
-
-                    this._yPos = item._yPos;
-                    this._xPos = item._xPos;
-                    _blackPiecesList.Remove(item);
-
-                    return true;
-                }
-                if (item._yPos == this._yPos - 1 && item._xPos == this._xPos - 1) 
-                {
-
-                    this._yPos = item._yPos;
-                    this._xPos = item._xPos;
-                    _blackPiecesList.Remove(item);
-
-                    return true;
-                }
 
             }
             return false;
@@ -114,16 +106,7 @@ namespace ChessProject
             foreach (var item in _whitePiecesList)
             {
 
-                if (item._yPos == this._yPos - 1 && item._xPos == this._xPos + 1)
-                {
-
-                    this._yPos = item._yPos;
-                    this._xPos = item._xPos;
-                    _whitePiecesList.Remove(item);
-
-                    return true;
-                }
-                if (item._yPos == this._yPos - 1 && item._xPos == this._xPos - 1)
+                if ((item._yPos == this._yPos + 1 && item._xPos == this._xPos + 1) || (item._yPos == this._yPos + 1 && item._xPos == this._xPos - 1))
                 {
 
                     this._yPos = item._yPos;
