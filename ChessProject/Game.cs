@@ -13,7 +13,7 @@ namespace ChessProject
         public Game()
         {
             _playerWhite = new PlayerWhite();   //skapa spelare
-            _playerBlack = new PlayerBlack();
+            _playerBlack = new PlayerBlack(); 
         }
 
 

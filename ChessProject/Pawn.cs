@@ -19,12 +19,15 @@ namespace ChessProject
         {
             if (_yPos == 7 || _yPos == 0)
             {
-                
+                // går inte utanför spelet.
+
+                // ska läggas in att man får välja en ny pjäs om man kommer hit med bonden.
             }
             else if (color == PieceColor.Black)
             {
                 this._yPos++;
-            }
+           
+           }
             else if (color == PieceColor.White)
             {
                 this._yPos--;

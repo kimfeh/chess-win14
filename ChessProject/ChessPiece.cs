@@ -17,7 +17,7 @@ namespace ChessProject
         protected int _attractionValue;
         public string Name { get; set; }
 
-             
+
         public virtual void MovePiece(PieceColor color)
         {
 
