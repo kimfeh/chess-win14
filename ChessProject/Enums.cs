@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessProject
 {
-    enum PieceColor
+    enum PieceColor   // This is to split our pieces into diffrent teams.
     {
         White,
         Black

@@ -10,7 +10,7 @@ namespace ChessProject
     {
         internal List<ChessPiece> _blackPiecesList = new List<ChessPiece>();
 
-        public PlayerBlack()
+        public PlayerBlack()  //adding Pieces to the the BlackPlayer and setting positions for them
         {
             ChessPiece pawn1 = new Pawn(0, 1);
             ChessPiece pawn2 = new Pawn(1, 1);

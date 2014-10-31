@@ -8,8 +8,9 @@ namespace ChessProject
 {
     static class ChessBoard
     {
-        static public Random rnd = new Random();
-        static public void PrintBoard(List<ChessPiece> white, List<ChessPiece> black)
+        static public Random rnd = new Random();  // setting an random for the moving pieces
+        
+        static public void PrintBoard(List<ChessPiece> white, List<ChessPiece> black)   // printing pieces and squares to the console
         {
             for (int y = 0; y < 8; y++)
             {
@@ -41,7 +42,7 @@ namespace ChessProject
             }
         }
 
-        private static void PrintBlackPos(List<ChessPiece> white, List<ChessPiece> black, int x, int y)
+        private static void PrintBlackPos(List<ChessPiece> white, List<ChessPiece> black, int x, int y) // printing pieces and squares to the console
         {
             Console.BackgroundColor = ConsoleColor.Black;
             foreach (var blackPiece in black)
@@ -80,7 +81,7 @@ namespace ChessProject
             Console.ResetColor();
         }
 
-        private static void PrintWhitePos(List<ChessPiece> white, List<ChessPiece> black, int x, int y)
+        private static void PrintWhitePos(List<ChessPiece> white, List<ChessPiece> black, int x, int y) // printing pieces and squares to the console
         {
 
             Console.BackgroundColor = ConsoleColor.White;

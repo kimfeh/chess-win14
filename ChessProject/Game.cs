@@ -10,10 +10,11 @@ namespace ChessProject
     {
         PlayerBlack _playerBlack;
         PlayerWhite _playerWhite;
+        
         public Game()
         {
-            _playerWhite = new PlayerWhite();   //skapa spelare
-            _playerBlack = new PlayerBlack(); 
+            _playerWhite = new PlayerWhite();   //Create an WhitePlayer
+            _playerBlack = new PlayerBlack();  // Create an BlackPlayer
         }
 
 
@@ -22,14 +23,14 @@ namespace ChessProject
 
         }
 
-        public void NextTurn()
+        public void NextTurn()   // One round of the game.
         {
             while (true)
             {
                 ChessBoard.PrintBoard(_playerWhite._whitePiecesList, _playerBlack._blackPiecesList);
-                _playerWhite._whitePiecesList[ChessBoard.rnd.Next(_playerWhite._whitePiecesList.Count)].MovePiece(PieceColor.White);
+                _playerWhite._whitePiecesList[ChessBoard.rnd.Next(_playerWhite._whitePiecesList.Count)].MovePiece(PieceColor.White); // randomise an white move onto the print board 
                 ChessBoard.PrintBoard(_playerWhite._whitePiecesList, _playerBlack._blackPiecesList);
-                _playerBlack._blackPiecesList[ChessBoard.rnd.Next(_playerBlack._blackPiecesList.Count)].MovePiece(PieceColor.Black);
+                _playerBlack._blackPiecesList[ChessBoard.rnd.Next(_playerBlack._blackPiecesList.Count)].MovePiece(PieceColor.Black);  // randomise an black move onto the print board 
                 
                 
                 Console.ReadKey();        
