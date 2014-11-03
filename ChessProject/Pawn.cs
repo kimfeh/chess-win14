@@ -17,14 +17,9 @@ namespace ChessProject
 
         public override void MovePiece(PieceColor color, List<ChessPiece> _blackPiecesList, List<ChessPiece> _whitePiecesList)
         {
-            if (_yPos == 7 || _yPos == 0) // stopping pawns from leaving the gameboard
-            {
-                return;
-                
-               // ska läggas in att man får välja en ny pjäs om man kommer hit med bonden.
-            }
+
             
-            else if (color == PieceColor.Black)
+            if (color == PieceColor.Black)
             {
                 
                 if(PawnKillWhite(_blackPiecesList, _whitePiecesList))
@@ -39,7 +34,7 @@ namespace ChessProject
                 
             }
             
-            else if (color == PieceColor.White)
+            if (color == PieceColor.White)
             {
                 if (PawnKillBlack(_blackPiecesList, _whitePiecesList)) 
                 {
@@ -84,15 +79,16 @@ namespace ChessProject
 
         private bool PawnKillBlack(List<ChessPiece> _blackPiecesList, List<ChessPiece> _whitePiecesList) 
         {
-            foreach (var item in _blackPiecesList)
-            {
+            for (int i = 0; i < _blackPiecesList.Count; i++)
+            
+           {
 
-                if ((item._yPos == this._yPos - 1 && item._xPos == this._xPos - 1) || (item._yPos == this._yPos - 1 && item._xPos == this._xPos + 1))
+               if ((_blackPiecesList[i]._yPos == this._yPos - 1 && _blackPiecesList[i]._xPos == this._xPos - 1) || (_blackPiecesList[i]._yPos == this._yPos - 1 && _blackPiecesList[i]._xPos == this._xPos + 1))
                 {
 
-                    this._yPos = item._yPos;
-                    this._xPos = item._xPos;
-                    _blackPiecesList.Remove(item);
+                    this._yPos = _blackPiecesList[i]._yPos;
+                    this._xPos = _blackPiecesList[i]._xPos;
+                    _blackPiecesList.Remove(_blackPiecesList[i]);
 
                     return true;
                 }
@@ -105,15 +101,16 @@ namespace ChessProject
 
         private bool PawnKillWhite(List<ChessPiece> _blackPiecesList, List<ChessPiece> _whitePiecesList)
         {
-            foreach (var item in _whitePiecesList)
-            {
+            for (int i = 0; i < _whitePiecesList.Count; i++)
+			{
 
-                if ((item._yPos == this._yPos + 1 && item._xPos == this._xPos + 1) || (item._yPos == this._yPos + 1 && item._xPos == this._xPos - 1))
+
+                if ((_whitePiecesList[i]._yPos == this._yPos + 1 && _whitePiecesList[i]._xPos == this._xPos + 1) || (_whitePiecesList[i]._yPos == this._yPos + 1 && _whitePiecesList[i]._xPos == this._xPos - 1))
                 {
 
-                    this._yPos = item._yPos;
-                    this._xPos = item._xPos;
-                    _whitePiecesList.Remove(item);
+                    this._yPos = _whitePiecesList[i]._yPos;
+                    this._xPos = _whitePiecesList[i]._xPos;
+                    _whitePiecesList.Remove(_whitePiecesList[i]);
                     return true;
                 }
 

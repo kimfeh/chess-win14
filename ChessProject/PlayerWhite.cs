@@ -12,6 +12,11 @@ namespace ChessProject
 
         public PlayerWhite() //adding Pieces to the the WhitePlayer and setting positions for them
         {
+            GivingWhitePlayerPieces();
+        }
+
+        private void GivingWhitePlayerPieces()
+        {
             ChessPiece pawn1 = new Pawn(0, 6);
             ChessPiece pawn2 = new Pawn(1, 6);
             ChessPiece pawn3 = new Pawn(2, 6);

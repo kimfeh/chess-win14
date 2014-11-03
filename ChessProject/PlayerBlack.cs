@@ -12,6 +12,11 @@ namespace ChessProject
 
         public PlayerBlack()  //adding Pieces to the the BlackPlayer and setting positions for them
         {
+            GivingBlackPlayerPieces();
+        }
+
+        private void GivingBlackPlayerPieces()
+        {
             ChessPiece pawn1 = new Pawn(0, 1);
             ChessPiece pawn2 = new Pawn(1, 1);
             ChessPiece pawn3 = new Pawn(2, 1);
@@ -28,8 +33,6 @@ namespace ChessProject
             _blackPiecesList.Add(pawn6);
             _blackPiecesList.Add(pawn7);
             _blackPiecesList.Add(pawn8);
-        }
-
-        
+        }        
     }
 }

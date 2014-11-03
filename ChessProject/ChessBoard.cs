@@ -8,8 +8,7 @@ namespace ChessProject
 {
     static class ChessBoard
     {
-        static public Random rnd = new Random();  // setting an random for the moving pieces
-        
+                
         static public void PrintBoard(List<ChessPiece> white, List<ChessPiece> black)   // printing pieces and squares to the console
         {
             for (int y = 0; y < 8; y++)
@@ -45,34 +44,34 @@ namespace ChessProject
         private static void PrintBlackPos(List<ChessPiece> white, List<ChessPiece> black, int x, int y) // printing pieces and squares to the console
         {
             Console.BackgroundColor = ConsoleColor.Black;
-            foreach (var blackPiece in black)
+            for (int i = 0; i < black.Count; i++)
             {
-                if (blackPiece._xPos == x && blackPiece._yPos == y)
-                {                   
+
+                if (black[i]._xPos == x && black[i]._yPos == y)
+                {
                     Console.SetCursorPosition(x, y);
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write(blackPiece._symbol);
+                    Console.Write(black[i]._symbol);
                     Console.ResetColor();
                     return;
                 }
                 else
                 {
-                    foreach (var whitePiece in white)
+                    for (int b = 0; b < white.Count; b++)
                     {
-                        if (whitePiece._xPos == x && whitePiece._yPos == y)
+                        if (white[b]._xPos == x && white[b]._yPos == y)
                         {
                             Console.SetCursorPosition(x, y);
                             Console.ForegroundColor = ConsoleColor.Green;
-                            Console.Write(whitePiece._symbol);
+                            Console.Write(white[b]._symbol);
                             Console.ResetColor();
-
                             return;
                         }
                         else
                         {
                             Console.SetCursorPosition(x, y);
                             Console.Write(" ");
-                            
+
                         }
                     }
                 }
@@ -86,26 +85,28 @@ namespace ChessProject
 
             Console.BackgroundColor = ConsoleColor.White;
 
-            foreach (var blackPiece in black)
+            for (int i = 0; i < black.Count; i++)
+           
             {
 
-                if (blackPiece._xPos == x && blackPiece._yPos == y)
+                if (black[i]._xPos == x && black[i]._yPos == y)
                 {
                     Console.SetCursorPosition(x, y);
-                    Console.ForegroundColor = ConsoleColor.Red;             
-                    Console.Write(blackPiece._symbol);
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write(black[i]._symbol);
                     Console.ResetColor();        
                     return;                        
                 }
                 else
                 {
-                    foreach (var whitePiece in white)
+                    for (int b = 0; b < white.Count; b++)
+                  
                     {
-                        if (whitePiece._xPos == x && whitePiece._yPos == y)
+                        if (white[b]._xPos == x && white[b]._yPos == y)
                         {
                             Console.SetCursorPosition(x, y);
-                            Console.ForegroundColor = ConsoleColor.Green;                  
-                            Console.Write(whitePiece._symbol);
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.Write(white[b]._symbol);
                             Console.ResetColor();
                             return;
                         }
